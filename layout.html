@@ -1,0 +1,99 @@
+<h1 id="title">American Sports Survey</h1>
+<div id="background">
+  <p id="description">What do Americans like most: baseball, basketball, or football?</p>
+  <form id="survey-form">
+    <div class="questions">
+      <div class="labels">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="answers">
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label id="email-label" for="email">E-mail:</label>
+      </div>
+      <div class="answers">
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label id="favoriteSport" for="multiple-choice">Which sport would you say is your favorite?</label>
+      </div>
+      <div class="answers">
+        <ul style="list-style:none">
+          <li class="options"><label>Baseball<input type="radio" class="favoriteSport" name="multiple-choice" value="baseball"></label></li>
+          <li class="options">
+            <label>Basketball<input type="radio" class="favoriteSport" name="multiple-choice" value="basketball"></label></li>
+          <li class="options">
+            <label>Football<input type="radio" class="favoriteSport" name="multiple-choice" value="football"></label></li>
+          <li class="options"><label>Other<input type="radio" class="favoriteSport" name="multiple-choice" value="other"></label></li>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label id="number-label" for="number">How many of your team's baseball games do you watch and/or attend per year?</label>
+      </div>
+      <div class="answers">
+        <input type="number" name="baseballGamesWatched" class="number" id="number" placeholder="# between 0-162" min="0" max="162" required>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label id="basketball-label" for="basketball">How many of your team's basketball games do you watch and/or attend per year?</label>
+      </div>
+      <div class="answers">
+        <input type="number" name="basketballGamesWatched" id="basketball" placeholder="# between 0-82" class="number" min="0" max="82" required>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label id="football-label" for="football">How many of your team's football games do you watch and/or attend per year?</label>
+      </div>
+      <div class="answers">
+        <input type="number" name="footballGamesWatched" id="football" class="number" placeholder="# between 0-16" min="0" max="16" required>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label for="sportsFollowed">Which of these sports do you follow?</label>
+      </div>
+      <div class="answers">
+        <ul id="sportsFollowed" style="list-style: none;">
+          <li class="checkbox"><label><input name="followedSport" value="1" type="checkbox" class="favoriteSport">Baseball</label></li>
+          <li class="checkbox"><label><input name="followedSport" value="2" type="checkbox" class="favoriteSport">Football</label></li>
+          <li class="checkbox"><label><input name="followedSport" value="3" type="checkbox" class="favoriteSport">Basketball</label></li>
+          <li class="checkbox"><label><input name="followedSport" value="4" type="checkbox" class="favoriteSport">Other</label></li>
+          <li class="checkbox"><label><input name="followedSport" value="5" type="checkbox" class="favoriteSport">None of the Above</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="labels">
+        <label for="athlete">Have you personally played one or more of these sports before?</label>
+      </div>
+      <div class="answers">
+        <select id="dropdown" name="athlete" class="dropdown">
+            <option selected disabled value>Select an option</option>
+            <option value="nosports">No, I have never played any of these sports</option>
+            <option value="littleleague">I played one or more sports as a child</option>
+            <option value="highschool">I played one or more sports for my school</option>
+            <option value="college">I played one or more sports in college</option>
+            <option value="semipro">I played one or more sports at a semi-professional level</option>
+            <option value="professional">I played one or more sports professionally</option>
+            <option value="noAnswer">I'd prefer not to answer</option>
+          </select>
+      </div>
+    </div>
+      <div class="questions">
+        <div class="labels">
+          <label for="reasoning">Why do you like your particular sport?</label>
+        </div>
+        <div class="answers">
+          <textarea id="reasoning" placeholder="Why do you like your sport/sports: excitement, history, action, etc.?"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button></form>
+    </div>
