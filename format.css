@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+html, body{
+  font-family: 'Permanent Marker';
+  text-align: center;
+  background-color: orange;
+}
+#description{
+  font-size: 30px;
+}
+#background{
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+}
+.questions{
+  margin-right: 208px;
+  font-size: 20px;
+}
+.answers{
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 250px;
+}
+.labels{
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 40%
+}
+#description{
+  padding-bottom: 40px
+}
+.number{  
+  width: 170px;
+}
+.favoriteSport{
+  float: left;
+  margin-right: 10px;
+}
+.options{
+  display: block;
+  left: -43px;
+  position: relative;
+  bottom: 10px;
+}
+.checkbox{
+  display: block;
+  position: relative;
+  left: -50px;
+  bottom: 15px;
+}
+#reasoning{
+  height: 50px;
+  width: 250px;
+}
+select{
+  width: 75%;
+}
